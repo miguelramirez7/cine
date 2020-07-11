@@ -161,7 +161,7 @@ public class asientos_CONJURO extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1150, 730));
         getContentPane().setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/inicio/ASIENTOS/sillas.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/inicio/ASIENTOS/sillas.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 650, 610);
 
@@ -213,16 +213,16 @@ public class asientos_CONJURO extends javax.swing.JFrame {
 
         jButton338.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton338.setForeground(new java.awt.Color(255, 0, 102));
-        jButton338.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton338.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton338.setText("GUARDAR BUTACAS");
         jButton338.setBorder(null);
         jButton338.setBorderPainted(false);
         jButton338.setContentAreaFilled(false);
-        jButton338.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton338.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton338.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton338.setIconTextGap(-3);
-        jButton338.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
-        jButton338.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton338.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
+        jButton338.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton338.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton338.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton338.addActionListener(new java.awt.event.ActionListener() {
@@ -235,15 +235,15 @@ public class asientos_CONJURO extends javax.swing.JFrame {
 
         jButton334.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton334.setForeground(new java.awt.Color(255, 0, 51));
-        jButton334.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton334.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton334.setText("SIGUIENTE");
         jButton334.setBorder(null);
         jButton334.setBorderPainted(false);
         jButton334.setContentAreaFilled(false);
-        jButton334.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton334.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton334.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton334.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente2.png"))); // NOI18N
-        jButton334.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton334.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente2.png"))); // NOI18N
+        jButton334.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton334.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton334.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton334.addActionListener(new java.awt.event.ActionListener() {
@@ -252,7 +252,7 @@ public class asientos_CONJURO extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton334);
-        jButton334.setBounds(1020, 600, 65, 80);
+        jButton334.setBounds(1020, 600, 69, 80);
 
         M.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         M.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" }));
@@ -454,7 +454,7 @@ public class asientos_CONJURO extends javax.swing.JFrame {
         getContentPane().add(jLabel15);
         jLabel15.setBounds(920, 580, 20, 17);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/blanco.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/blanco.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 1250, 700);
 

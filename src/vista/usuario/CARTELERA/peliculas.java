@@ -24,7 +24,10 @@ public class peliculas extends javax.swing.JFrame {
         DefaultComboBoxModel combobox = new DefaultComboBoxModel();
         combobox.addElement("Elige un dia"); 
         try{
-            PreparedStatement ps=cn.prepareStatement("select to_char(sysdate+level-1,'DAY DD') dia from dual connect by level <6");
+            //PreparedStatement ps=cn.prepareStatement("select to_char(sysdate+level-1,'DAY DD') dia from dual connect by level <6");
+            PreparedStatement ps1=cn.prepareStatement("SET lc_time_names = 'es_PE'");
+            ResultSet rs1=ps1.executeQuery();
+            PreparedStatement ps=cn.prepareStatement("select date_format(now(),'%W %d') dia union select date_format(NOW() + INTERVAL 1 DAY,'%W %d')union select date_format(NOW() + INTERVAL 2 DAY,'%W %d')union select date_format(NOW() + INTERVAL 3 DAY,'%W %d')union select date_format(NOW() + INTERVAL 4 DAY,'%W %d')");
             ResultSet rs=ps.executeQuery();
             int i=1;
             while(rs.next()){

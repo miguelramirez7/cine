@@ -39,14 +39,14 @@ public class snacks extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(430, 615));
         getContentPane().setLayout(null);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -57,16 +57,16 @@ public class snacks extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 51, 51));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/finish_buy1.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/finish_buy1.png"))); // NOI18N
         jButton3.setText("TERMINAR COMPRA");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setIconTextGap(-3);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/finish_buy2.png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/finish_buy1.png"))); // NOI18N
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/finish_buy2.png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/finish_buy1.png"))); // NOI18N
         jButton3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -79,16 +79,16 @@ public class snacks extends javax.swing.JFrame {
 
         bebidas.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         bebidas.setForeground(new java.awt.Color(255, 51, 51));
-        bebidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/bebida.png"))); // NOI18N
+        bebidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/bebida.png"))); // NOI18N
         bebidas.setText("BEBIDAS");
         bebidas.setBorder(null);
         bebidas.setBorderPainted(false);
         bebidas.setContentAreaFilled(false);
-        bebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bebidas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bebidas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bebidas.setIconTextGap(-3);
-        bebidas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/bebi 3.png"))); // NOI18N
-        bebidas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/bebida.png"))); // NOI18N
+        bebidas.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/bebi 3.png"))); // NOI18N
+        bebidas.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/bebida.png"))); // NOI18N
         bebidas.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         bebidas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         bebidas.addActionListener(new java.awt.event.ActionListener() {
@@ -101,16 +101,16 @@ public class snacks extends javax.swing.JFrame {
 
         canchita.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         canchita.setForeground(new java.awt.Color(255, 51, 0));
-        canchita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/canchita.png"))); // NOI18N
+        canchita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/canchita.png"))); // NOI18N
         canchita.setText("CANCHITAS");
         canchita.setBorder(null);
         canchita.setBorderPainted(false);
         canchita.setContentAreaFilled(false);
-        canchita.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        canchita.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         canchita.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         canchita.setIconTextGap(-3);
-        canchita.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/canchita 2.png"))); // NOI18N
-        canchita.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/canchita.png"))); // NOI18N
+        canchita.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/canchita 2.png"))); // NOI18N
+        canchita.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/canchita.png"))); // NOI18N
         canchita.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         canchita.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         canchita.addActionListener(new java.awt.event.ActionListener() {
@@ -127,16 +127,16 @@ public class snacks extends javax.swing.JFrame {
 
         jButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 0, 0));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/hot.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/hot.png"))); // NOI18N
         jButton6.setText("HOT-DOG");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.setIconTextGap(-3);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/hot2.png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/hot.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/hot2.png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/hot.png"))); // NOI18N
         jButton6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -149,16 +149,16 @@ public class snacks extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 51, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/DUL2.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/DUL2.png"))); // NOI18N
         jButton2.setText("DULCES");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setIconTextGap(-3);
-        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/dul G.png"))); // NOI18N
-        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/DUL2.png"))); // NOI18N
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/dul G.png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/DUL2.png"))); // NOI18N
         jButton2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -171,16 +171,16 @@ public class snacks extends javax.swing.JFrame {
 
         combo.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         combo.setForeground(new java.awt.Color(255, 51, 51));
-        combo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/comb 1.png"))); // NOI18N
+        combo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/comb 1.png"))); // NOI18N
         combo.setText("COMBOS");
         combo.setBorder(null);
         combo.setBorderPainted(false);
         combo.setContentAreaFilled(false);
-        combo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        combo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         combo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo.setIconTextGap(-1);
-        combo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/comb 2.png"))); // NOI18N
-        combo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/comb 1.png"))); // NOI18N
+        combo.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/comb 2.png"))); // NOI18N
+        combo.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/comb 1.png"))); // NOI18N
         combo.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +191,7 @@ public class snacks extends javax.swing.JFrame {
         getContentPane().add(combo);
         combo.setBounds(220, 20, 130, 160);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/fondo.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/fondo.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-30, 0, 550, 580);
 

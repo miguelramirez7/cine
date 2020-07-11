@@ -16,7 +16,7 @@ public class cines_locales extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle( " NUESROS LOCALES ");
         setResizable(false);    
-        IMA = new ImageIcon("src/proyectos.imagenes.iconos/map-M.png");
+        IMA = new ImageIcon("src/vista.usuario.imagenes.inocos/map-M.png");
            }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -48,14 +48,14 @@ public class cines_locales extends javax.swing.JFrame {
         getContentPane().add(C1);
         C1.setBounds(250, 120, 150, 14);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +73,7 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_4.setBorder(null);
         ubi_4.setBorderPainted(false);
         ubi_4.setContentAreaFilled(false);
-        ubi_4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ubi_4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_4.setIconTextGap(-4);
         ubi_4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
@@ -86,7 +86,7 @@ public class cines_locales extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubi_4);
-        ubi_4.setBounds(120, 430, 83, 90);
+        ubi_4.setBounds(120, 430, 73, 90);
 
         ubi_3.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
         ubi_3.setForeground(new java.awt.Color(255, 255, 255));
@@ -95,7 +95,7 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_3.setBorder(null);
         ubi_3.setBorderPainted(false);
         ubi_3.setContentAreaFilled(false);
-        ubi_3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ubi_3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_3.setIconTextGap(-4);
         ubi_3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
@@ -117,7 +117,7 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_2.setBorder(null);
         ubi_2.setBorderPainted(false);
         ubi_2.setContentAreaFilled(false);
-        ubi_2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ubi_2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_2.setIconTextGap(-4);
         ubi_2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
@@ -139,7 +139,7 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_1.setBorder(null);
         ubi_1.setBorderPainted(false);
         ubi_1.setContentAreaFilled(false);
-        ubi_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ubi_1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_1.setIconTextGap(-5);
         ubi_1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N

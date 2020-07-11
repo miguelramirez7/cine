@@ -16,18 +16,22 @@ public class Pelicula {
     private String nombre;
     private int idCategoriaPelicula;
     private String resenia;
-    private Blob foto;
+    private String foto;
+    private int estado;
+    private int panel;
 
-    public Pelicula(int idPelicula, String nombre, int idCategoriaPelicula, String resenia, Blob foto) {
+    public Pelicula(int idPelicula, String nombre, int idCategoriaPelicula, String resenia, String foto,int estado,int panel) {
         this.idPelicula = idPelicula;
         this.nombre = nombre;
         this.idCategoriaPelicula = idCategoriaPelicula;
         this.resenia = resenia;
         this.foto = foto;
+        this.estado = estado;
+        this.panel = panel;
     }
 
     public Pelicula() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     public int getIdPelicula() {
@@ -62,12 +66,27 @@ public class Pelicula {
         this.resenia = resenia;
     }
 
-    public Blob getFoto() {
+    public String getFoto() {
         return foto;
     }
 
-    public void setFoto(Blob foto) {
+    public void setFoto(String foto) {
         this.foto = foto;
     }
     
+    public int getEstado(){
+        return estado;
+    }
+    
+    public void setEstado(int estado){
+        this.estado = estado;
+    }
+    
+    public int getPanel(){
+        return panel;
+    }
+    
+    public void setPanel(int panel){
+        this.panel = panel;
+    }
 }

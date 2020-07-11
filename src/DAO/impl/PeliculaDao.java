@@ -27,20 +27,24 @@ private AccesoDb db;
     @Override
     public ArrayList<Pelicula> listarPeliculas() {
     ArrayList<Pelicula> lista = new  ArrayList<Pelicula>();
-       String procedimientoAlmacenado="CALL sp_listarpeliculas()";
+       String procedimientoAlmacenado="CALL sp_listarPeliculasPanel()";
        Connection cn=db.getConnection();
        if(cn!=null){
            try{
                CallableStatement cs=cn.prepareCall(procedimientoAlmacenado);
                ResultSet rs=cs.executeQuery();
+               
                while(rs.next()){
                    Pelicula pel=new Pelicula();
-                   pel.setIdPelicula(rs.getInt("idPelicula"));
+                   //System.out.println(rs.getInt("nombre"));
+                   pel.setIdPelicula(rs.getInt("idPeliculas"));
                    pel.setNombre(rs.getString("nombre"));
-                   pel.setIdCategoriaPelicula(rs.getInt("idCategoriaPelicula"));
+                   pel.setIdCategoriaPelicula(rs.getInt("idcategoriaPelicula"));
                    pel.setResenia(rs.getString("reseña"));
-                   pel.setFoto(rs.getBlob("foto"));
-                   
+                   pel.setFoto(rs.getString("foto"));
+                   pel.setEstado(rs.getInt("estado"));
+                   pel.setPanel(rs.getInt("panel"));
+                   lista.add(pel);
                }
            }catch(SQLException ex){}
            finally{
@@ -58,7 +62,7 @@ private AccesoDb db;
     public String insertarPelicula(Pelicula pelicula) {
        String rpta=null;
         Connection cn=db.getConnection();
-        String procedimientoAlmacenado="CALL sp_insertapelicula(?,?,?,?,?)";
+        String procedimientoAlmacenado="CALL sp_insertapelicula(?,?,?,?,?,?,?)";
         if(cn!=null){
             try{
                CallableStatement cs=cn.prepareCall(procedimientoAlmacenado);
@@ -67,7 +71,9 @@ private AccesoDb db;
                cs.setString(2,pelicula.getNombre());
                cs.setInt(3,pelicula.getIdCategoriaPelicula());
                cs.setString(4,pelicula.getResenia());
-               cs.setBlob(5, pelicula.getFoto());
+               cs.setString(5, pelicula.getFoto());
+               cs.setInt(6,pelicula.getEstado());
+               cs.setInt(7, pelicula.getPanel());
  
                
                int inserto=cs.executeUpdate();
@@ -100,7 +106,7 @@ private AccesoDb db;
                cs.setString(2,pelicula.getNombre());
                cs.setInt(3,pelicula.getIdCategoriaPelicula());
                cs.setString(4,pelicula.getResenia());
-               cs.setBlob(5, pelicula.getFoto());
+               cs.setString(5, pelicula.getFoto());
                
                 int actualizo=cs.executeUpdate();
                 if(actualizo==0){
@@ -140,7 +146,7 @@ private AccesoDb db;
                    pel.setNombre(rs.getString("nombre"));
                    pel.setIdCategoriaPelicula(rs.getInt("idCategoriaPelicula"));
                    pel.setResenia(rs.getString("reseña"));
-                   pel.setFoto(rs.getBlob("foto"));
+                   pel.setFoto(rs.getString("foto"));
                }
            }catch(SQLException ex){}
            finally{
