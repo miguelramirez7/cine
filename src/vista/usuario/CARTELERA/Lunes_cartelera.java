@@ -24,8 +24,8 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         System.out.println(listapelis.size());
         for(int i =0; i<listapelis.size(); i++){
             if(i==0){
-                nombrePelicula1.setText(listapelis.get(i).getNombre());
-                fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource(listapelis.get(i).getFoto())));
+                //nombrePelicula1.setText(listapelis.get(i).getNombre());
+                //fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource(listapelis.get(i).getFoto())));
             }else{
                 if(i==1){
                     nombrePelicula2.setText(listapelis.get(i).getNombre());
@@ -96,6 +96,7 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         nombrePelicula2.setText("Mulan");
         getContentPane().add(nombrePelicula2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 130, 20));
 
+        fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/CARTELERA/imagenes/scooby.jpg"))); // NOI18N
         fotoPelicula1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
         getContentPane().add(fotoPelicula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 260));
 
@@ -162,7 +163,7 @@ public class Lunes_cartelera extends javax.swing.JFrame {
 
         nombrePelicula1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         nombrePelicula1.setForeground(new java.awt.Color(255, 255, 255));
-        nombrePelicula1.setText("Nombre pelicula");
+        nombrePelicula1.setText("Scooby");
         getContentPane().add(nombrePelicula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 130, 20));
 
         jLabel15.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N

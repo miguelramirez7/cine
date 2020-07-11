@@ -109,7 +109,7 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton3.setContentAreaFilled(false);
         jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/anular_2.jpg"))); // NOI18N
         getContentPane().add(jButton3);
-        jButton3.setBounds(10, 190, 120, 39);
+        jButton3.setBounds(10, 190, 130, 39);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
