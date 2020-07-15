@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import vista.usuario.inicio.ASIENTOS.asientos_CONJURO;
-import vista.usuario.inicio.ASIENTOS.grafico;
+import vista.usuario.inicio.ASIENTOS.Asientos2;
+import vista.usuario.inicio.ASIENTOS.Asientos4;
 import vista.usuario.inicio.snack.dulces;
 
 public class ENTRADAS3 extends javax.swing.JFrame {
@@ -39,6 +39,8 @@ public class ENTRADAS3 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle(" BOLETERIA ");
         setResizable(false); 
+        Lunes_cartelera ventana = new Lunes_cartelera();
+        nombrePeli3.setText(ventana.nomPeli3);
     }
 
     @SuppressWarnings("unchecked")
@@ -73,6 +75,7 @@ public class ENTRADAS3 extends javax.swing.JFrame {
         S1 = new javax.swing.JSpinner();
         precio1 = new javax.swing.JLabel();
         precio3 = new javax.swing.JLabel();
+        nombrePeli3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         precio2 = new javax.swing.JLabel();
@@ -208,7 +211,7 @@ public class ENTRADAS3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton6);
-        jButton6.setBounds(400, 290, 69, 80);
+        jButton6.setBounds(400, 290, 65, 80);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -358,6 +361,11 @@ public class ENTRADAS3 extends javax.swing.JFrame {
         getContentPane().add(precio3);
         precio3.setBounds(420, 220, 40, 18);
 
+        nombrePeli3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        nombrePeli3.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(nombrePeli3);
+        nombrePeli3.setBounds(90, 80, 90, 20);
+
         jLabel1.setBackground(new java.awt.Color(255, 102, 51));
         jLabel1.setFont(new java.awt.Font("Broadway", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -367,9 +375,9 @@ public class ENTRADAS3 extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("PELICULA: EL CONJURO");
+        jLabel19.setText("PELICULA:");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(20, 80, 150, 15);
+        jLabel19.setBounds(20, 80, 70, 15);
 
         precio2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         precio2.setForeground(new java.awt.Color(255, 255, 255));
@@ -420,14 +428,14 @@ public class ENTRADAS3 extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
-        Lunes_cartelera L = new Lunes_cartelera();
+        Lunes2 L = new Lunes2();
         L.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
-        asientos_CONJURO G = new asientos_CONJURO ();
+        Asientos2 G = new Asientos2 ();
         G.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
@@ -670,6 +678,7 @@ public class ENTRADAS3 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JLabel nombrePeli3;
     private javax.swing.JLabel precio1;
     private javax.swing.JLabel precio2;
     private javax.swing.JLabel precio3;

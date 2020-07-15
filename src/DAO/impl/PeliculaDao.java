@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * @author Patty
  */
 public class PeliculaDao implements IPeliculaDao{
-private AccesoDb db;
+    private AccesoDb db;
     public PeliculaDao() {
          db=new AccesoDb();
     }
@@ -59,8 +59,8 @@ private AccesoDb db;
     }
 
     @Override
-    public String insertarPelicula(Pelicula pelicula) {
-       String rpta=null;
+    public String insertarPelicula(Pelicula pelicula) {       
+        String rpta=null;
         Connection cn=db.getConnection();
         String procedimientoAlmacenado="CALL sp_insertapelicula(?,?,?,?,?,?,?)";
         if(cn!=null){
@@ -92,6 +92,7 @@ private AccesoDb db;
            }    
        }
        return rpta;
+       
     }
 
     @Override

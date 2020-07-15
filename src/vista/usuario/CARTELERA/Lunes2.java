@@ -2,8 +2,6 @@
 package vista.usuario.CARTELERA;
 
 import javax.swing.JOptionPane;
-import vista.usuario.CARTELERA.SINOPSIS.X_men;
-import vista.usuario.CARTELERA.SINOPSIS.locos_deAmor;
 
 public class Lunes2 extends javax.swing.JFrame {
 
@@ -15,6 +13,11 @@ public class Lunes2 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle(" CARTELERA ");
         setResizable(false);
+        Lunes_cartelera ventana = new Lunes_cartelera();
+        nombrePelicula3.setText(ventana.nomPeli3);
+        nombrePelicula4.setText(ventana.nomPeli4);
+        fotoPelicula3.setIcon(new javax.swing.ImageIcon(getClass().getResource(ventana.fotoPeli3)));
+        fotoPelicula4.setIcon(new javax.swing.ImageIcon(getClass().getResource(ventana.fotoPeli4)));
     }
 
    
@@ -38,22 +41,23 @@ public class Lunes2 extends javax.swing.JFrame {
         jButton22 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        nombrePelicula4 = new javax.swing.JLabel();
+        fotoPelicula3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        nombrePelicula3 = new javax.swing.JLabel();
+        fotoPelicula4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -69,16 +73,15 @@ public class Lunes2 extends javax.swing.JFrame {
 
         jButton24.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
-        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 1.png"))); // NOI18N
+        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton24.setText("SINOPSIS");
-        jButton24.setBorder(null);
         jButton24.setBorderPainted(false);
         jButton24.setContentAreaFilled(false);
         jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton24.setIconTextGap(-3);
-        jButton24.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 2.png"))); // NOI18N
-        jButton24.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 1.png"))); // NOI18N
+        jButton24.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 2.png"))); // NOI18N
+        jButton24.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton24.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton24.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton24.addActionListener(new java.awt.event.ActionListener() {
@@ -87,20 +90,19 @@ public class Lunes2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton24);
-        jButton24.setBounds(410, 490, 100, 80);
+        jButton24.setBounds(390, 490, 120, 80);
 
         jButton13.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 1.png"))); // NOI18N
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton13.setText("SINOPSIS");
-        jButton13.setBorder(null);
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
         jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton13.setIconTextGap(-3);
-        jButton13.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 2.png"))); // NOI18N
-        jButton13.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/SI 1.png"))); // NOI18N
+        jButton13.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 2.png"))); // NOI18N
+        jButton13.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton13.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton13.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +111,7 @@ public class Lunes2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton13);
-        jButton13.setBounds(400, 190, 100, 80);
+        jButton13.setBounds(380, 190, 120, 80);
 
         jButton21.setBackground(new java.awt.Color(255, 102, 0));
         jButton21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -245,7 +247,7 @@ public class Lunes2 extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 102, 0));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setText("4:30");
+        jButton3.setText("3:30");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -253,17 +255,6 @@ public class Lunes2 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3);
         jButton3.setBounds(300, 80, 70, 23);
-
-        jButton6.setBackground(new java.awt.Color(255, 102, 0));
-        jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton6.setText("4:50");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(380, 80, 70, 23);
 
         jButton9.setBackground(new java.awt.Color(255, 102, 0));
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -320,6 +311,17 @@ public class Lunes2 extends javax.swing.JFrame {
         getContentPane().add(jButton8);
         jButton8.setBounds(220, 170, 70, 23);
 
+        jButton26.setBackground(new java.awt.Color(255, 102, 0));
+        jButton26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton26.setText("6:10");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton26);
+        jButton26.setBounds(380, 110, 70, 23);
+
         jButton14.setBackground(new java.awt.Color(255, 102, 0));
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton14.setText("11:30");
@@ -330,6 +332,17 @@ public class Lunes2 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton14);
         jButton14.setBounds(220, 200, 70, 23);
+
+        jButton25.setBackground(new java.awt.Color(255, 102, 0));
+        jButton25.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton25.setText("4:50");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton25);
+        jButton25.setBounds(380, 80, 70, 23);
 
         jButton7.setBackground(new java.awt.Color(255, 102, 0));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -348,25 +361,23 @@ public class Lunes2 extends javax.swing.JFrame {
         getContentPane().add(jLabel8);
         jLabel8.setBounds(220, 340, 110, 14);
 
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("LA RAZON DE ESTAR CONTIGO");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(220, 320, 240, 20);
+        nombrePelicula4.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        nombrePelicula4.setForeground(new java.awt.Color(255, 255, 255));
+        nombrePelicula4.setText("pelicula4");
+        getContentPane().add(nombrePelicula4);
+        nombrePelicula4.setBounds(220, 320, 240, 20);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/CARTELERA/imagenes/fragmentado.jpg"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 30, 4, 250);
+        fotoPelicula3.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
+        getContentPane().add(fotoPelicula3);
+        fotoPelicula3.setBounds(20, 10, 180, 260);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
-        jButton1.setBorder(null);
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -389,16 +400,15 @@ public class Lunes2 extends javax.swing.JFrame {
         getContentPane().add(jLabel5);
         jLabel5.setBounds(220, 50, 110, 14);
 
-        jLabel4.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("FRAGMENTADO");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(220, 30, 130, 20);
+        nombrePelicula3.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        nombrePelicula3.setForeground(new java.awt.Color(255, 255, 255));
+        nombrePelicula3.setText("pelicula3");
+        getContentPane().add(nombrePelicula3);
+        nombrePelicula3.setBounds(220, 30, 130, 20);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/CARTELERA/imagenes/la razon de estar contigo.jpg"))); // NOI18N
-        jLabel2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 320, 4, 250);
+        fotoPelicula4.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
+        getContentPane().add(fotoPelicula4);
+        fotoPelicula4.setBounds(20, 310, 180, 270);
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
 
@@ -448,17 +458,17 @@ public class Lunes2 extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
 
-       locos_deAmor L = new locos_deAmor();
+       SinopsisPelicula3 L = new SinopsisPelicula3();
        L.setVisible(true);
-       dispose();
+       //dispose();
 
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
 
-        X_men E = new X_men();
+        SinopsisPelicula4 E = new SinopsisPelicula4();
         E.setVisible(true);
-        dispose();
+        //dispose();
 
     }//GEN-LAST:event_jButton24ActionPerformed
 
@@ -473,14 +483,9 @@ public class Lunes2 extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, " FUNCION NO DISPONIBLE ", null, WIDTH);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        
-        JOptionPane.showMessageDialog(null, " FUNCION NO DISPONIBLE ", null, WIDTH);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         
-        ENTRADAS E = new ENTRADAS ();
+        ENTRADAS3 E = new ENTRADAS3 ();
         E.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton12ActionPerformed
@@ -507,7 +512,7 @@ public class Lunes2 extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
      
-        ENTRADAS2 M = new ENTRADAS2 ();
+        ENTRADAS4 M = new ENTRADAS4 ();
         M.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -557,6 +562,14 @@ public class Lunes2 extends javax.swing.JFrame {
       JOptionPane.showMessageDialog(null, " FUNCION NO DISPONIBLE ", null, WIDTH);
     }//GEN-LAST:event_jButton23ActionPerformed
 
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        JOptionPane.showMessageDialog(null, " FUNCION NO DISPONIBLE ", null, WIDTH);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        JOptionPane.showMessageDialog(null, " FUNCION NO DISPONIBLE ", null, WIDTH);
+    }//GEN-LAST:event_jButton26ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -593,6 +606,8 @@ public class Lunes2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel fotoPelicula3;
+    private javax.swing.JLabel fotoPelicula4;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -610,22 +625,21 @@ public class Lunes2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel nombrePelicula3;
+    private javax.swing.JLabel nombrePelicula4;
     // End of variables declaration//GEN-END:variables
 }

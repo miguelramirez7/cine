@@ -7,11 +7,21 @@ import Modelo.Pelicula;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import vista.usuario.inicio.MENU;
-import vista.usuario.CARTELERA.SINOPSIS.alicia;
-import vista.usuario.CARTELERA.SINOPSIS.el_conjuro;
+import vista.usuario.CARTELERA.SinopsisPelicula1;
 
 public class Lunes_cartelera extends javax.swing.JFrame {
 
+    public static String nomPeli1="";
+    public static String nomPeli2="";
+    public static String nomPeli3="";
+    public static String nomPeli4="";
+    public static String fotoPeli3="";
+    public static String fotoPeli4="";
+    public static String reseña1="";
+    public static String reseña2="";
+    public static String reseña3="";
+    public static String reseña4="";
+   
     public Lunes_cartelera() {
         initComponents();
         
@@ -19,21 +29,31 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle(" CARTELERA ");
         setResizable(false);
+ 
         IPeliculaDao peliculaDAO=DAOFactory.getInstance().getPeliculaDao();
         ArrayList<Pelicula> listapelis= peliculaDAO.listarPeliculas();
         System.out.println(listapelis.size());
         for(int i =0; i<listapelis.size(); i++){
             if(i==0){
-                //nombrePelicula1.setText(listapelis.get(i).getNombre());
-                //fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource(listapelis.get(i).getFoto())));
+                nomPeli1=listapelis.get(i).getNombre();
+                nombrePelicula1.setText(nomPeli1);
+                fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource(listapelis.get(i).getFoto())));
+                reseña1=listapelis.get(i).getResenia();
             }else{
                 if(i==1){
-                    nombrePelicula2.setText(listapelis.get(i).getNombre());
+                    nomPeli2=listapelis.get(i).getNombre();
+                    nombrePelicula2.setText(nomPeli2);
+                    fotoPelicula2.setIcon(new javax.swing.ImageIcon(getClass().getResource(listapelis.get(i).getFoto())));
+                    reseña2=listapelis.get(i).getResenia();
                 }else{
                     if(i==2){
-                        //nombrePelicula3.setText(listapelis.get(i).getNombre());
+                        nomPeli3 = listapelis.get(i).getNombre();
+                        fotoPeli3 = listapelis.get(i).getFoto();
+                        reseña3=listapelis.get(i).getResenia();
                     }else{
-                        //nombrePelicula4.setText(listapelis.get(i).getNombre());
+                        nomPeli4 = listapelis.get(i).getNombre();
+                        fotoPeli4 = listapelis.get(i).getFoto();
+                        reseña4=listapelis.get(i).getResenia();
                     }
                 }
             }
@@ -51,9 +71,8 @@ public class Lunes_cartelera extends javax.swing.JFrame {
 
         nombrePelicula2 = new javax.swing.JLabel();
         fotoPelicula1 = new javax.swing.JLabel();
-        fotoPeli3 = new javax.swing.JLabel();
+        fotoPelicula2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         nombrePelicula1 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -93,49 +112,26 @@ public class Lunes_cartelera extends javax.swing.JFrame {
 
         nombrePelicula2.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         nombrePelicula2.setForeground(new java.awt.Color(255, 255, 255));
-        nombrePelicula2.setText("Mulan");
+        nombrePelicula2.setText("pelicula2");
         getContentPane().add(nombrePelicula2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 130, 20));
 
-        fotoPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/CARTELERA/imagenes/scooby.jpg"))); // NOI18N
         fotoPelicula1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
         getContentPane().add(fotoPelicula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 260));
 
-        fotoPeli3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/CARTELERA/imagenes/mulan.jpeg"))); // NOI18N
-        fotoPeli3.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
-        getContentPane().add(fotoPeli3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 180, 270));
+        fotoPelicula2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
+        getContentPane().add(fotoPelicula2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 180, 270));
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
-        jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 70, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(589, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
@@ -144,7 +140,6 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton28.setText("SINOPSIS");
-        jButton28.setBorder(null);
         jButton28.setBorderPainted(false);
         jButton28.setContentAreaFilled(false);
         jButton28.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -159,11 +154,11 @@ public class Lunes_cartelera extends javax.swing.JFrame {
                 jButton28ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 100, 80));
+        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 120, 80));
 
         nombrePelicula1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         nombrePelicula1.setForeground(new java.awt.Color(255, 255, 255));
-        nombrePelicula1.setText("Scooby");
+        nombrePelicula1.setText("pelicula1");
         getContentPane().add(nombrePelicula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 130, 20));
 
         jLabel15.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
@@ -295,7 +290,6 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton5.setText("MAS PELICULAS");
-        jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -307,7 +301,7 @@ public class Lunes_cartelera extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 150, 90));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 190, 90));
 
         jLabel9.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -428,7 +422,6 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/SI 1.png"))); // NOI18N
         jButton26.setText("SINOPSIS");
-        jButton26.setBorder(null);
         jButton26.setBorderPainted(false);
         jButton26.setContentAreaFilled(false);
         jButton26.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -441,10 +434,9 @@ public class Lunes_cartelera extends javax.swing.JFrame {
                 jButton26ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 470, 100, 80));
+        getContentPane().add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 470, -1, 80));
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
-        jButton11.setBorder(null);
         jButton11.setBorderPainted(false);
         jButton11.setContentAreaFilled(false);
         jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -456,7 +448,7 @@ public class Lunes_cartelera extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 70, 50));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 70, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/CARTELERA/imagenes/fondos-de-pantalla-azul-infinito.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-210, -1150, 760, 1800));
@@ -464,20 +456,14 @@ public class Lunes_cartelera extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        MENU M = new MENU();
-        M.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
+        SinopsisPelicula1 ventana = new SinopsisPelicula1();
+        ventana.setVisible(true);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        ENTRADAS3 E = new ENTRADAS3 ();
+        ENTRADAS E = new ENTRADAS ();
         E.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -541,7 +527,7 @@ public class Lunes_cartelera extends javax.swing.JFrame {
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
 
-        ENTRADAS4 E = new ENTRADAS4 ();
+        ENTRADAS2 E = new ENTRADAS2 ();
         E.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton15ActionPerformed
@@ -598,9 +584,9 @@ public class Lunes_cartelera extends javax.swing.JFrame {
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
 
-        alicia A = new alicia ();
+        SinopsisPelicula2 A = new SinopsisPelicula2 ();
         A.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -644,9 +630,8 @@ public class Lunes_cartelera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel fotoPeli3;
     private javax.swing.JLabel fotoPelicula1;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel fotoPelicula2;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;

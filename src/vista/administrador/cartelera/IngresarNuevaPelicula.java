@@ -5,6 +5,10 @@
  */
 package vista.administrador.cartelera;
 
+import DAO.factoria.DAOFactory;
+import DAO.interfaces.IPeliculaDao;
+import Modelo.Pelicula;
+import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -17,15 +21,33 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
      * Creates new form IngresarNuevaPelicula
      */
     DefaultTableModel tabla = new DefaultTableModel();
+    private static String titulo="";
     public IngresarNuevaPelicula() {
         initComponents();
+        setLocationRelativeTo(null);
         
-        tabla.addColumn("");
+        //tabla.addColumn("");
         tabla.addColumn("Nombre");
         tabla.addColumn("Estado");
         //TableColumn sportColumn = tabla.g
         this.jTable1.setModel(tabla);
+        IPeliculaDao peliculaDao=DAOFactory.getInstance().getPeliculaDao();
+        ArrayList<Pelicula> listaPelicula= peliculaDao.listarPeliculas();
+        
+        for(int i =0; i<listaPelicula.size(); i++){
+            String estado="";
+            //System.out.println(listaPelicula.get(i).getNombre());
+            if(listaPelicula.get(i).getEstado()==1){
+                estado="En cartelera";
+            }else{
+                estado="Inactiva";
+            }
+            Object [] row = {listaPelicula.get(i).getNombre(),estado};
+            tabla.addRow(row);
+        }
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,27 +75,23 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Registro de Peliculas");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 10, 380, 44);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Criterios de Busqueda");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 60, 180, 22);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 180, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Nombre:");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 100, 70, 17);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(70, 100, 110, 20);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 70, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 110, -1));
 
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,8 +107,7 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(50, 140, 140, 40);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 140, 40));
 
         jButton2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,8 +116,7 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton2.setContentAreaFilled(false);
         jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/limpiar_2.png"))); // NOI18N
         jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/limpiar.png"))); // NOI18N
-        getContentPane().add(jButton2);
-        jButton2.setBounds(180, 140, 130, 39);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 130, -1));
 
         jButton3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -108,8 +124,7 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton3.setText("Anular");
         jButton3.setContentAreaFilled(false);
         jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/anular_2.jpg"))); // NOI18N
-        getContentPane().add(jButton3);
-        jButton3.setBounds(10, 190, 130, 39);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 130, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,8 +136,7 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 230, 380, 380);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 380, 380));
 
         jButton4.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
@@ -130,8 +144,12 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton4.setText("Nuevo");
         jButton4.setContentAreaFilled(false);
         jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/nuevo_2.png"))); // NOI18N
-        getContentPane().add(jButton4);
-        jButton4.setBounds(10, 620, 120, 39);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 120, -1));
 
         jButton5.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -139,8 +157,12 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton5.setText("Editar");
         jButton5.setContentAreaFilled(false);
         jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/editar_2.jpg"))); // NOI18N
-        getContentPane().add(jButton5);
-        jButton5.setBounds(120, 620, 120, 37);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 620, 120, -1));
 
         jButton6.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
@@ -148,24 +170,20 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
         jButton6.setText("Cancelar");
         jButton6.setContentAreaFilled(false);
         jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/cancelar_2.jpg"))); // NOI18N
-        getContentPane().add(jButton6);
-        jButton6.setBounds(250, 620, 130, 39);
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 620, 130, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Estado:");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(190, 100, 50, 17);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 50, -1));
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo" }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(240, 100, 100, 23);
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, 100, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/fondo.png"))); // NOI18N
         jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(-4, 0, 405, 720);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -173,6 +191,19 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        this.setTitulo("Nueva Pelicula");
+        NuevaPelicula vista = new NuevaPelicula();
+        vista.setVisible(true);
+        //dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        this.setTitulo("Editar Pelicula");
+        NuevaPelicula vista = new NuevaPelicula();
+        vista.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,4 +257,12 @@ public class IngresarNuevaPelicula extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    public String getTitulo() {
+        return this.titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 }

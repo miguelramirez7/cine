@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import vista.usuario.inicio.ASIENTOS.asientos_LOCOS;
-import vista.usuario.inicio.ASIENTOS.grafico;
+import vista.usuario.inicio.ASIENTOS.Asientos3;
+import vista.usuario.inicio.ASIENTOS.Asientos4;
 import vista.usuario.inicio.snack.dulces;
 
 public class ENTRADAS extends javax.swing.JFrame {
@@ -39,6 +39,8 @@ public class ENTRADAS extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle(" BOLETERIA ");
         setResizable(false);
+        Lunes_cartelera ventana = new Lunes_cartelera();
+        nombrePeli1.setText(ventana.nomPeli1);
       }
     
     @SuppressWarnings({"unchecked", "Convert2Lambda"})
@@ -75,6 +77,7 @@ public class ENTRADAS extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        nombrePeli1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -86,13 +89,13 @@ public class ENTRADAS extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(500, 415));
         getContentPane().setLayout(null);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -125,7 +128,7 @@ public class ENTRADAS extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton3.setText("GUARDAR COMPRA");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -133,8 +136,8 @@ public class ENTRADAS extends javax.swing.JFrame {
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setIconTextGap(-3);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -147,15 +150,15 @@ public class ENTRADAS extends javax.swing.JFrame {
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton6.setText("SIGUIENTE");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente2.png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente2.png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -346,9 +349,14 @@ public class ENTRADAS extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("PELICULA:  LOCOS DE AMOR");
+        jLabel19.setText("PELICULA:");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(20, 80, 190, 15);
+        jLabel19.setBounds(20, 80, 70, 15);
+
+        nombrePeli1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        nombrePeli1.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(nombrePeli1);
+        nombrePeli1.setBounds(90, 80, 90, 20);
 
         jLabel3.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -411,7 +419,7 @@ public class ENTRADAS extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(70, 30, 330, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/cines.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/cines.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-650, -1080, 1180, 1620);
 
@@ -429,35 +437,37 @@ public class ENTRADAS extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
-     asientos_LOCOS G = new asientos_LOCOS ();
+     Asientos3 G = new Asientos3 ();
       G.setVisible(true);
       dispose();
         
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                 
-      if ( a !=0){  // PARA EL PRIMERO
-        try {             
-      PreparedStatement M = cn.prepareStatement
-      (" INSERT INTO entradas_cantidad (precio,descripcion,cantidad,total) VALUES(?,?,?,?)");
-            
-       M.setString(1,p1);
-       M.setString(2,g);
-       M.setInt(3, a);
-       M.setInt(4, res1);
+        float tot=Float.parseFloat(total_precio.getText());
+        int idTIcket;
+        if(a!=0 || b!=0 || c!=0){
+            try {
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO ticketpelicula (idCartelera,total) VALUES(?,?)");
+                M.setInt(1,1);
+                M.setFloat(2,tot);
+                M.executeUpdate(); // para actualizar la BD
+                JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
+                
+                //PreparedStatement m = cn.prepareStatement
+                //(" select max(idPelicula) from ticketpelicula");
+                
+                M.executeUpdate();
+            } catch (SQLException ex) {
+                Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }
           
-            
-        M.executeUpdate(); // para actualizar la BD
-      
-       JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
-        } catch (SQLException ex) {
+        }
+                
+        if ( a !=0){  // PARA EL PRIMERO
+                  
         
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
-        }          
-         
-        //---------------------------------------------------------------------       
-      //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL
        try {        
       PreparedStatement M = cn.prepareStatement
         (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");
@@ -679,6 +689,7 @@ public class ENTRADAS extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JLabel nombrePeli1;
     private javax.swing.JLabel precio1;
     private javax.swing.JLabel precio2;
     private javax.swing.JLabel precio3;

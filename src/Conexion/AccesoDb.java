@@ -16,7 +16,7 @@ public class AccesoDb {
         Connection cn=null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            cn=DriverManager.getConnection("jdbc:mysql://localhost/cine","root","root");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost/cine?serverTimezone=UTC","root","root");
             //DriverManager.registerDriver(new OracleDriver());
             //cn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","cine","cine2");
             //System.out.println("Conexion Establecida");

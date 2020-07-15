@@ -1,6 +1,7 @@
 
 package vista;
 
+import vista.administrador.cartelera.IngresarNuevaPelicula;
 import vista.usuario.inicio.MENU;
 
 public class portada extends javax.swing.JFrame {
@@ -85,7 +86,9 @@ public class portada extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        IngresarNuevaPelicula ventana = new IngresarNuevaPelicula();
+        ventana.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

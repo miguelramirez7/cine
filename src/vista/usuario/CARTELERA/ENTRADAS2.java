@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import vista.usuario.inicio.ASIENTOS.grafico;
+import vista.usuario.inicio.ASIENTOS.Asientos4;
 import vista.usuario.inicio.snack.dulces;
 
 public class ENTRADAS2 extends javax.swing.JFrame {
@@ -39,6 +39,8 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle(" BOLETERIA ");
         setResizable(false); 
+        Lunes_cartelera ventana = new Lunes_cartelera();
+        nombrePeli2.setText(ventana.nomPeli2);
     }
 
     
@@ -73,6 +75,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        nombrePeli2 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -94,13 +97,13 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(80, 30, 320, 40);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras pe.png"))); // NOI18N
-        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/atras G.png"))); // NOI18N
+        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras pe.png"))); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/atras G.png"))); // NOI18N
         jButton5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -303,6 +306,11 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(70, 30, 330, 40);
 
+        nombrePeli2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        nombrePeli2.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(nombrePeli2);
+        nombrePeli2.setBounds(90, 80, 90, 20);
+
         jLabel17.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("sub total:");
@@ -317,21 +325,21 @@ public class ENTRADAS2 extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("PELICULA:  X- MEN");
+        jLabel19.setText("PELICULA:");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(20, 80, 150, 15);
+        jLabel19.setBounds(20, 80, 70, 15);
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton6.setText("SIGUIENTE");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente2.png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/siguiente1.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente2.png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/siguiente1.png"))); // NOI18N
         jButton6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -344,7 +352,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton3.setText("GUARDAR COMPRA");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -352,8 +360,8 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setIconTextGap(-3);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -412,7 +420,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
         getContentPane().add(jPanel5);
         jPanel5.setBounds(330, 260, 60, 20);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/cines.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/cines.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-650, -1080, 1180, 1620);
 
@@ -421,7 +429,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
-        Lunes2 L = new Lunes2();
+        Lunes_cartelera L = new Lunes_cartelera();
         L.setVisible(true);
         dispose();
 
@@ -602,7 +610,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
-        grafico G = new grafico ();
+        Asientos4 G = new Asientos4 ();
         G.setVisible(true);
         dispose();
 
@@ -676,6 +684,7 @@ public class ENTRADAS2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JLabel nombrePeli2;
     private javax.swing.JLabel precio1;
     private javax.swing.JLabel precio2;
     private javax.swing.JLabel precio3;
