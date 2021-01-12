@@ -5,14 +5,17 @@
  */
 package vista.administrador.cartelera;
 
+import DAO.factoria.DAOFactory;
+import DAO.interfaces.IPeliculaDao;
+import Modelo.Pelicula;
 import java.io.File;
+import java.util.ArrayList;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import vista.portada;
 
-/**
- *
- * @author EDUARDO
- */
+
 public class NuevaPelicula extends javax.swing.JFrame {
 
     /**
@@ -24,7 +27,7 @@ public class NuevaPelicula extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         IngresarNuevaPelicula ventana = new IngresarNuevaPelicula();
         
-        lblTitulo.setText(ventana.getTitulo());
+        estipo.setText(ventana.getTitulo());
     }
 
     /**
@@ -36,34 +39,37 @@ public class NuevaPelicula extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitulo = new javax.swing.JLabel();
+        estipo = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbCategoria = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
+        txtResenia = new javax.swing.JTextArea();
+        txtNombre = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         txtNombreImagen = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        txtEstado = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        lblTitulo1 = new javax.swing.JLabel();
+        catipo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        categoriat2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTitulo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitulo.setText("Titulo");
-        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        estipo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        estipo.setForeground(new java.awt.Color(255, 255, 255));
+        estipo.setText("En Cartelera");
+        getContentPane().add(estipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 110, -1));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Nombre:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Reseña(max 700 caracteres):");
@@ -73,15 +79,20 @@ public class NuevaPelicula extends javax.swing.JFrame {
         jLabel5.setText("Categoria");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 130, -1));
+        cmbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3" }));
+        cmbCategoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbCategoriaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cmbCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 40, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtResenia.setColumns(20);
+        txtResenia.setRows(5);
+        jScrollPane1.setViewportView(txtResenia);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 190, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 130, -1));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 130, -1));
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Imagen:");
@@ -100,8 +111,13 @@ public class NuevaPelicula extends javax.swing.JFrame {
         jLabel7.setText("Estado:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En cartelera", "Inactiva" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 130, -1));
+        txtEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "0" }));
+        txtEstado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEstadoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 40, -1));
 
         jButton2.setText("GUARDAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +125,7 @@ public class NuevaPelicula extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 380, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 360, -1, -1));
 
         jButton3.setText("ATRAS");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -117,10 +133,25 @@ public class NuevaPelicula extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+
+        lblTitulo1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTitulo1.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitulo1.setText("Titulo");
+        getContentPane().add(lblTitulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        catipo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        catipo.setForeground(new java.awt.Color(255, 255, 255));
+        catipo.setText("Infantil");
+        getContentPane().add(catipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 80, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/fondo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 420));
+
+        categoriat2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        categoriat2.setForeground(new java.awt.Color(255, 255, 255));
+        categoriat2.setText("-");
+        getContentPane().add(categoriat2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 80, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -144,8 +175,52 @@ public class NuevaPelicula extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        if(txtNombre.getText()!=null){
+            if(txtResenia.getText()!=null){
+                if(txtNombreImagen.getText()!=null){        
+                    IPeliculaDao peliculaDao=DAOFactory.getInstance().getPeliculaDao();
+                    String rpta = peliculaDao.insertarPelicula(new Pelicula
+                                 (txtNombre.getText(),
+                                 Integer.parseInt(cmbCategoria.getSelectedItem().toString()),
+                                 txtResenia.getText(),
+                                 txtNombreImagen.getText(),
+                                 Integer.parseInt(txtEstado.getSelectedItem().toString())));
+                        
+                }else{
+                        JOptionPane.showMessageDialog(null, "El campo Imagen es OBLIGATORIO");
+                }
+            }else{
+                    JOptionPane.showMessageDialog(null, "El campo categoria es OBLIGATORIO");
+            }
+            
+        }else{
+            JOptionPane.showMessageDialog(null, "El campo nombre es OBLIGATORIO");
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void cmbCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCategoriaActionPerformed
+        int mcat =  Integer.parseInt(cmbCategoria.getSelectedItem().toString());
+        if(mcat == 1){
+            catipo.setText("Infantil");
+        }
+        if(mcat == 2){
+            catipo.setText("Drama");
+        }
+        if(mcat == 3){
+            catipo.setText("Accion");
+        }
+    }//GEN-LAST:event_cmbCategoriaActionPerformed
+
+    private void txtEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEstadoActionPerformed
+        int mest =  Integer.parseInt(txtEstado.getSelectedItem().toString());
+        if(mest == 1){
+            estipo.setText("En cartelera");
+        }
+        if(mest == 0){
+            estipo.setText("Inactivo");
+        }
+ 
+    }//GEN-LAST:event_txtEstadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,11 +258,13 @@ public class NuevaPelicula extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel categoriat2;
+    private javax.swing.JLabel catipo;
+    private javax.swing.JComboBox<String> cmbCategoria;
+    private javax.swing.JLabel estipo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -195,9 +272,10 @@ public class NuevaPelicula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JLabel lblTitulo1;
+    private javax.swing.JComboBox<String> txtEstado;
+    private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNombreImagen;
+    private javax.swing.JTextArea txtResenia;
     // End of variables declaration//GEN-END:variables
 }

@@ -94,7 +94,7 @@ public class canchita extends javax.swing.JFrame {
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 0, 102));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton6.setText("agregar");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
@@ -102,8 +102,8 @@ public class canchita extends javax.swing.JFrame {
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.setIconTextGap(-3);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/Add-item-icon.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon (1).png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/Add-item-icon.png"))); // NOI18N
         jButton6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -207,13 +207,13 @@ public class canchita extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(130, 130, 140, 20);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/can4.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/can4.png"))); // NOI18N
         getContentPane().add(jLabel4);
         jLabel4.setBounds(280, 210, 120, 130);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/can1.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/can2.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(250, 0, 90, 150);
+        jLabel1.setBounds(270, 0, 90, 150);
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -240,7 +240,7 @@ public class canchita extends javax.swing.JFrame {
         getContentPane().add(jPanel4);
         jPanel4.setBounds(290, 150, 60, 20);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/can2.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/can2.png"))); // NOI18N
         getContentPane().add(jLabel3);
         jLabel3.setBounds(170, 10, 80, 130);
 
@@ -288,7 +288,7 @@ public class canchita extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(100, 0, 10, 500);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/can3.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/can3.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(150, 210, 100, 130);
 

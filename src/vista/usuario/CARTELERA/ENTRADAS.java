@@ -454,117 +454,79 @@ public class ENTRADAS extends javax.swing.JFrame {
                 M.setFloat(2,tot);
                 M.executeUpdate(); // para actualizar la BD
                 JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
-                
-                //PreparedStatement m = cn.prepareStatement
-                //(" select max(idPelicula) from ticketpelicula");
-                
                 M.executeUpdate();
             } catch (SQLException ex) {
                 Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
             }
-          
-        }
-                
+        }                
         if ( a !=0){  // PARA EL PRIMERO
-                  
-        
-       try {        
-      PreparedStatement M = cn.prepareStatement
-        (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");
-            
-         M.setString(1,g);
-         M.setDouble(2,res1);
-          
-      M.executeUpdate(); // para actualizar la BD
-      
-           System.out.println(" DATOS GUARDADOS ");
-     
-        
-    } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
-        }      
-      }
-      
-      
-      if (b!=0){     // PARA EL SEGUNDO
-        try {             
-      PreparedStatement M = cn.prepareStatement
-      (" INSERT INTO entradas_cantidad (precio,descripcion,cantidad,total) VALUES(?,?,?,?)");
-            
-       M.setString(1,p2);     
-       M.setString(2,n);
-       M.setInt(3, b);
-       M.setInt(4, res2);
-     
-        M.executeUpdate(); // para actualizar la BD
-       JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
-               
-        } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            try {        
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)"); 
+                M.setString(1,g);
+                M.setDouble(2,res1);         
+                M.executeUpdate(); // para actualizar la BD     
+                System.out.println(" DATOS GUARDADOS ");        
+            } catch (SQLException ex) {
+                Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }      
         }
-        
+        if (b!=0){     // PARA EL SEGUNDO
+            try {             
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO entradas_cantidad (precio,descripcion,cantidad,total) VALUES(?,?,?,?)");
+                M.setString(1,p2);     
+                M.setString(2,n);
+                M.setInt(3, b);
+                M.setInt(4, res2);     
+                M.executeUpdate(); // para actualizar la BD
+                JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");               
+            } catch (SQLException ex) {  
+            Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }      
       //---------------------------------------------------------------------       
-      //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL
-      
-      try {        
-      PreparedStatement M = cn.prepareStatement
-        (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");
-            
-      M.setString(1,n);
-      M.setDouble(2,res2);
-          
-      M.executeUpdate(); // para actualizar la BD
-      
-       System.out.println(" DATOS GUARDADOS ");
-        
-    } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
-        }     
-      } 
-                  
-      if (c!=0)  // PARA EL TERCERO
-      {    
-        try {             
-      PreparedStatement M = cn.prepareStatement
-      (" INSERT INTO entradas_cantidad (precio,descripcion,cantidad,total) VALUES(?,?,?,?)");
-              
-       M.setString(1,p3);
-       M.setString(2,m);
-       M.setInt(3,c);
-       M.setInt(4, res3);       
-            
-        M.executeUpdate(); // para actualizar la BD
-      
-       JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
-        
-        } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
-        }  
-        
+      //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL    
+            try {        
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");          
+                M.setString(1,n);
+                M.setDouble(2,res2);    
+                M.executeUpdate(); // para actualizar la BD     
+                System.out.println(" DATOS GUARDADOS ");
+            } catch (SQLException ex) {      
+                Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }     
+        }           
+        if (c!=0)  // PARA EL TERCERO
+        {    
+            try {             
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO entradas_cantidad (precio,descripcion,cantidad,total) VALUES(?,?,?,?)");            
+                M.setString(1,p3);
+                M.setString(2,m);
+                M.setInt(3,c);
+                M.setInt(4, res3);               
+                M.executeUpdate(); // para actualizar la BD    
+                JOptionPane.showMessageDialog(null," DATOS GUARDADOS ");
+            } catch (SQLException ex) {
+                Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }         
       //---------------------------------------------------------------------       
-      //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL
-      
-      try {        
-      PreparedStatement M = cn.prepareStatement
-        (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");
-            
-      M.setString(1,m);
-      M.setDouble(2,res3);
-          
-      M.executeUpdate(); // para actualizar la BD
-      
-       System.out.println(" DATOS GUARDADOS ");
+      //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL  
+            try {        
+                PreparedStatement M = cn.prepareStatement
+                (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");   
+                M.setString(1,m);
+                M.setDouble(2,res3);    
+                M.executeUpdate(); // para actualizar la BD
+                System.out.println(" DATOS GUARDADOS ");
         
-    } catch (SQLException ex) {
+            } catch (SQLException ex) {
         
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
-        }     
+                Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            }     
         
-      }
+        }
         
     }//GEN-LAST:event_jButton3ActionPerformed
 

@@ -12,22 +12,24 @@ import javax.swing.JOptionPane;
  * @author Patty
  */
 public class AccesoDb {
-    public Connection getConnection(){
-        Connection cn=null;
+    
+    Connection cn;
+            
+    
+    public AccesoDb(){   
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            cn=DriverManager.getConnection("jdbc:mysql://localhost/cine?serverTimezone=UTC","root","root");
-            //DriverManager.registerDriver(new OracleDriver());
-            //cn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:ORCL","cine","cine2");
-            //System.out.println("Conexion Establecida");
-            //JOptionPane.showMessageDialog(null, "Conexion establecida");
+            cn =DriverManager.getConnection("jdbc:mysql://localhost:3306/cine?characterEncoding=utf8","root","");
+           
         }catch(ClassNotFoundException | SQLException e){
             System.out.println("Error de COnexion");
-            JOptionPane.showMessageDialog(null, "Error de conexion"+e);
+            JOptionPane.showMessageDialog(null, "Error de conexion BD ==> "+e);
         }
+    }
+    
+    public Connection getConnection(){
+     
         return cn;
     }
-    public AccesoDb(){
-        
-    }
+    
 }

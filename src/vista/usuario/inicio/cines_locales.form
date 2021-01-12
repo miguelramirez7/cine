@@ -55,7 +55,7 @@
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -88,7 +88,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="UBICACION"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -97,15 +97,15 @@
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="iconTextGap" type="int" value="-4"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="3"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
@@ -118,7 +118,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="120" y="430" width="-1" height="90"/>
+          <AbsoluteConstraints x="110" y="420" width="-1" height="120"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -131,7 +131,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="UBICACION"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -140,15 +140,15 @@
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="iconTextGap" type="int" value="-4"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="3"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
@@ -161,7 +161,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="290" width="90" height="90"/>
+          <AbsoluteConstraints x="110" y="280" width="90" height="120"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -174,7 +174,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="UBICACION"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -183,15 +183,15 @@
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="iconTextGap" type="int" value="-4"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="3"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
@@ -204,7 +204,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="160" width="90" height="90"/>
+          <AbsoluteConstraints x="110" y="140" width="90" height="120"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -217,7 +217,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="UBICACION"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -226,15 +226,15 @@
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Cursor Por defecto"/>
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="iconTextGap" type="int" value="-5"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/UB 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="3"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
@@ -247,7 +247,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="30" width="90" height="90"/>
+          <AbsoluteConstraints x="110" y="0" width="90" height="120"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -314,7 +314,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/locales/local 1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/locales/local2.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
@@ -333,7 +333,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/locales/LOCAL3.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/locales/LOCAL3.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
@@ -352,7 +352,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/locales/local2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/locales/local 1.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
@@ -371,7 +371,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/locales/local4.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/locales/local4.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
@@ -400,18 +400,6 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="260" y="540" width="120" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/cines.jpg"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="-900" y="-1070" width="1370" height="1670"/>
         </Constraint>
       </Constraints>
     </Component>

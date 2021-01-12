@@ -1,6 +1,7 @@
 
 package vista.usuario.inicio;
 
+import javax.swing.JOptionPane;
 import vista.usuario.inicio.SINOPSIS.S1;
 import vista.usuario.inicio.SINOPSIS.S2;
 
@@ -201,17 +202,19 @@ public class estrenos2 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-        S2 era_de_hielo = new S2();
-        era_de_hielo.setVisible(true);
-        dispose();
+       JOptionPane.showMessageDialog(null," 18.000 años antes de Cristo, en la Edad de Hielo, todas las criaturas que " +"\n"+" habitan la Tierra están emigrando hacia el sur para evitar morir congelados. La única excepción  " +"\n"+" es un mamut llamado Manfred y un perezoso gigante y vago llamado Sid.  "
+            , " Sinopsis",
+            JOptionPane.PLAIN_MESSAGE);
+        
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        S1 warcraft = new S1();
-        warcraft.setVisible(true);
-        dispose();
+       JOptionPane.showMessageDialog(null," Un brujo orco llamado Gul'dan ha unido los clanes orcos en una Horda," +"\n"+" creando un portal para pasar al mundo de Azeroth. Los orcos están utilizando " +"\n"+" la magia vil para absorber la vida de los draenei con el fin de alimentar el portal "
+            , " Sinopsis",
+            JOptionPane.PLAIN_MESSAGE);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

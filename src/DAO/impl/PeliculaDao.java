@@ -25,7 +25,7 @@ public class PeliculaDao implements IPeliculaDao{
     }
 
     @Override
-    public ArrayList<Pelicula> listarPeliculas() {
+    public ArrayList<Pelicula> listarPeliculas()    {
     ArrayList<Pelicula> lista = new  ArrayList<Pelicula>();
        String procedimientoAlmacenado="CALL sp_listarPeliculasPanel()";
        Connection cn=db.getConnection();
@@ -62,18 +62,18 @@ public class PeliculaDao implements IPeliculaDao{
     public String insertarPelicula(Pelicula pelicula) {       
         String rpta=null;
         Connection cn=db.getConnection();
-        String procedimientoAlmacenado="CALL sp_insertapelicula(?,?,?,?,?,?,?)";
+        String procedimientoAlmacenado="CALL sp_insertapelicula(?,?,?,?,?)";
         if(cn!=null){
             try{
                CallableStatement cs=cn.prepareCall(procedimientoAlmacenado);
 
-               cs.setInt(1,pelicula.getIdPelicula());
-               cs.setString(2,pelicula.getNombre());
-               cs.setInt(3,pelicula.getIdCategoriaPelicula());
-               cs.setString(4,pelicula.getResenia());
-               cs.setString(5, pelicula.getFoto());
-               cs.setInt(6,pelicula.getEstado());
-               cs.setInt(7, pelicula.getPanel());
+              // cs.setInt(1,pelicula.getIdPelicula());
+               cs.setString(1,pelicula.getNombre());
+               cs.setInt(2,pelicula.getIdCategoriaPelicula());
+               cs.setString(3,pelicula.getResenia());
+               cs.setString(4, pelicula.getFoto());
+               cs.setInt(5,pelicula.getEstado());
+             //  cs.setInt(7, pelicula.getPanel());
  
                
                int inserto=cs.executeUpdate();
@@ -99,15 +99,18 @@ public class PeliculaDao implements IPeliculaDao{
     public String actualizarPelicula(Pelicula pelicula) {
         String rpta=null;
         Connection cn=db.getConnection();
-        String procedimientoAlmacenado="CALL sp_actualizapelicula(?,?,?,?,?)";
+        String procedimientoAlmacenado="CALL sp_editarpelicula(?,?,?,?,?)";
        if(cn!=null){
            try{
                 CallableStatement cs=cn.prepareCall(procedimientoAlmacenado);
-               cs.setInt(1,pelicula.getIdPelicula());
-               cs.setString(2,pelicula.getNombre());
-               cs.setInt(3,pelicula.getIdCategoriaPelicula());
-               cs.setString(4,pelicula.getResenia());
-               cs.setString(5, pelicula.getFoto());
+                
+               // cs.setInt(1,pelicula.getIdPelicula());
+               cs.setString(1,pelicula.getNombre());
+               cs.setInt(2,pelicula.getIdCategoriaPelicula());
+               cs.setString(3,pelicula.getResenia());
+               cs.setString(4, pelicula.getFoto());
+               cs.setInt(5,pelicula.getEstado());
+             //  cs.setInt(7, pelicula.getPanel());
                
                 int actualizo=cs.executeUpdate();
                 if(actualizo==0){
@@ -128,8 +131,34 @@ public class PeliculaDao implements IPeliculaDao{
 
     @Override
     public String eliminarPelicula(Pelicula pelicula) {
-        return null;
-      
+       String rpta=null;
+       Connection cn=db.getConnection();
+       String procedimientoAlmacenado="CALL sp_actualizapelicula(?)";
+       if(cn!=null){
+           try{
+               CallableStatement cs= cn.prepareCall(procedimientoAlmacenado);
+               
+              /*// cs.setInt(1,pelicula.getIdPelicula());
+               cs.setString(1,pelicula.getNombre());
+               //cs.setInt(3,pelicula.getIdCategoriaPelicula());
+              // cs.setString(4,pelicula.getResenia());
+              // cs.setString(5, pelicula.getFoto());*/
+               
+                int actualizo=cs.executeUpdate();
+                if(actualizo==0){
+                       rpta="ERROR";
+                }
+               
+           }catch(SQLException ex){}
+           finally{
+               try{
+                   cn.close();
+               }catch(SQLException e){
+                   
+               }
+           }    
+       }
+      return rpta; 
     }
 
     @Override

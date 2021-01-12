@@ -190,7 +190,7 @@ public class MENU extends javax.swing.JFrame {
 
     private void nuestros_cinesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuestros_cinesActionPerformed
 
-        cines_locales C = new cines_locales ();
+        cines_locales C = new cines_locales();
         C.setVisible(true);
         dispose();
 

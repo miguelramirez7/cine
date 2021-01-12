@@ -77,7 +77,7 @@
           <Color blue="66" green="0" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/Add-item-icon.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/Add-item-icon.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="agregar"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -91,10 +91,10 @@
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="iconTextGap" type="int" value="-3"/>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/Add-item-icon (1).png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/Add-item-icon (1).png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/inocos/Add-item-icon.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/inocos/Add-item-icon.png"/>
         </Property>
         <Property name="verticalAlignment" type="int" value="3"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
@@ -309,7 +309,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/SNACKS/can4.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/SNACKS/can4.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -321,12 +321,12 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/SNACKS/can1.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/SNACKS/can2.png"/>
         </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="250" y="0" width="90" height="150"/>
+          <AbsoluteConstraints x="270" y="0" width="90" height="150"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -380,7 +380,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/SNACKS/can2.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/SNACKS/can2.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -473,7 +473,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/proyectos/imagenes/SNACKS/can3.png"/>
+          <Image iconType="3" name="/vista/usuario/imagenes/SNACKS/can3.png"/>
         </Property>
       </Properties>
       <Constraints>

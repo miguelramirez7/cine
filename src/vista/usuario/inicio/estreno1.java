@@ -1,6 +1,7 @@
 
 package vista.usuario.inicio;
 
+import javax.swing.JOptionPane;
 import vista.usuario.inicio.SINOPSIS.S3;
 import vista.usuario.inicio.SINOPSIS.S4;
 
@@ -230,10 +231,9 @@ public class estreno1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
          
-        S4 la_mujer_maravilla = new S4();
-        la_mujer_maravilla.setVisible(true);
-        dispose();
-        
+    JOptionPane.showMessageDialog(null," Antes de ser la Mujer Maravilla era Diana, la Princesa de las Amazonas, criada en una resguardada isla paradisíaca "+"\n"+ "y entrenada para ser una guerrera invencible.Cuando un piloto estadounidense se estrella a orillas de la isla y le cuenta sobre " +"\n"+ " un tremendo conflicto que se propaga en el mundo exterior, Diana deja su hogar convencida de que puede frenar la amenaza." +"\n"+ " Al luchar junto a los hombres en una guerra para terminar con todas las guerras, Diana descubrirá sus plenos poderes... y su verdadero destino  "
+            , " Sinopsis",
+            JOptionPane.PLAIN_MESSAGE);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -248,9 +248,9 @@ public class estreno1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        S3 escuadron_suicida = new S3 ();
-        escuadron_suicida.setVisible(true);
-        dispose();
+        JOptionPane.showMessageDialog(null," Tras ser encarcelados, los siete supervillanos más peligrosos del mundo acceden a " +"\n"+" colaborar con el gobierno en peligrosas misiones secretas para así lograr limpiar su expediente." +"\n"+  " Juntos reciben el nombre de Escuadrón Suicida por el riesgo de las tareas a las que se enfrentarán  "
+            , " Sinopsis",
+            JOptionPane.PLAIN_MESSAGE);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

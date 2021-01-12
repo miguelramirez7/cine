@@ -1,13 +1,12 @@
 
 package vista.usuario.inicio;
 
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import vista.*;
 
 public class cines_locales extends javax.swing.JFrame {
 
-   Icon IMA;
+  // Icon IMA;
     
     public cines_locales() {
         initComponents();
@@ -16,7 +15,7 @@ public class cines_locales extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle( " NUESROS LOCALES ");
         setResizable(false);    
-        IMA = new ImageIcon("src/vista.usuario.imagenes.inocos/map-M.png");
+        // IMA = new ImageIcon("src/vista/usuario/imagenes/inocos/map-M.png");
            }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -36,7 +35,6 @@ public class cines_locales extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         C4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(420, 590));
@@ -68,7 +66,7 @@ public class cines_locales extends javax.swing.JFrame {
 
         ubi_4.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
         ubi_4.setForeground(new java.awt.Color(255, 255, 255));
-        ubi_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_4.setText("UBICACION");
         ubi_4.setBorder(null);
         ubi_4.setBorderPainted(false);
@@ -76,8 +74,8 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_4.setIconTextGap(-4);
-        ubi_4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
-        ubi_4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
+        ubi_4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         ubi_4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         ubi_4.addActionListener(new java.awt.event.ActionListener() {
@@ -86,11 +84,11 @@ public class cines_locales extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubi_4);
-        ubi_4.setBounds(120, 430, 73, 90);
+        ubi_4.setBounds(110, 420, 97, 120);
 
         ubi_3.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
         ubi_3.setForeground(new java.awt.Color(255, 255, 255));
-        ubi_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_3.setText("UBICACION");
         ubi_3.setBorder(null);
         ubi_3.setBorderPainted(false);
@@ -98,8 +96,8 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_3.setIconTextGap(-4);
-        ubi_3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
-        ubi_3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
+        ubi_3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         ubi_3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         ubi_3.addActionListener(new java.awt.event.ActionListener() {
@@ -108,11 +106,11 @@ public class cines_locales extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubi_3);
-        ubi_3.setBounds(110, 290, 90, 90);
+        ubi_3.setBounds(110, 280, 90, 120);
 
         ubi_2.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
         ubi_2.setForeground(new java.awt.Color(255, 255, 255));
-        ubi_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_2.setText("UBICACION");
         ubi_2.setBorder(null);
         ubi_2.setBorderPainted(false);
@@ -120,8 +118,8 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_2.setIconTextGap(-4);
-        ubi_2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
-        ubi_2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
+        ubi_2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         ubi_2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         ubi_2.addActionListener(new java.awt.event.ActionListener() {
@@ -130,11 +128,11 @@ public class cines_locales extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubi_2);
-        ubi_2.setBounds(110, 160, 90, 90);
+        ubi_2.setBounds(110, 140, 90, 120);
 
         ubi_1.setFont(new java.awt.Font("Chiller", 1, 18)); // NOI18N
         ubi_1.setForeground(new java.awt.Color(255, 255, 255));
-        ubi_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_1.setText("UBICACION");
         ubi_1.setBorder(null);
         ubi_1.setBorderPainted(false);
@@ -142,8 +140,8 @@ public class cines_locales extends javax.swing.JFrame {
         ubi_1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ubi_1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         ubi_1.setIconTextGap(-5);
-        ubi_1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB2.png"))); // NOI18N
-        ubi_1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/UB 1.png"))); // NOI18N
+        ubi_1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
+        ubi_1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/map-map-marker-icon (1).png"))); // NOI18N
         ubi_1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         ubi_1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         ubi_1.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +150,7 @@ public class cines_locales extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ubi_1);
-        ubi_1.setBounds(110, 30, 90, 90);
+        ubi_1.setBounds(110, 0, 90, 120);
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
         jPanel1.setForeground(new java.awt.Color(255, 255, 0));
@@ -183,22 +181,22 @@ public class cines_locales extends javax.swing.JFrame {
         getContentPane().add(C3);
         C3.setBounds(250, 400, 160, 14);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/locales/local 1.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/locales/local2.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 255, 255)));
         getContentPane().add(jLabel3);
         jLabel3.setBounds(230, 150, 170, 100);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/locales/LOCAL3.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/locales/LOCAL3.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 255, 255)));
         getContentPane().add(jLabel1);
         jLabel1.setBounds(230, 290, 170, 100);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/locales/local2.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/locales/local 1.png"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 255, 255)));
         getContentPane().add(jLabel4);
         jLabel4.setBounds(230, 20, 160, 90);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/locales/local4.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/locales/local4.png"))); // NOI18N
         jLabel6.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 255, 255)));
         getContentPane().add(jLabel6);
         jLabel6.setBounds(230, 430, 170, 100);
@@ -209,49 +207,8 @@ public class cines_locales extends javax.swing.JFrame {
         getContentPane().add(C4);
         C4.setBounds(260, 540, 120, 14);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/cines.jpg"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(-900, -1070, 1370, 1670);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ubi_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_1ActionPerformed
-
-         JOptionPane.showMessageDialog(null," Royal Plaza"+"\n"+""+
-            "Carlos Alberto Izaguirre 295" +
-            " ,Lima ", " CinePAPAYA LOS OLIVOS ",
-            JOptionPane.PLAIN_MESSAGE,IMA);
-
-    }//GEN-LAST:event_ubi_1ActionPerformed
-
-    private void ubi_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_2ActionPerformed
-
-       
- 
-        JOptionPane.showMessageDialog(null," CinePAPAYA SMP"+"\n"+
-            "nro 7038 7042,"+"\n"+
-            "Av Alfredo Mendiola 7026, Lima ", " CinePAPAYA SAN MARTIN DE PORRES ",
-            JOptionPane.WARNING_MESSAGE,IMA);
-    }//GEN-LAST:event_ubi_2ActionPerformed
-
-    private void ubi_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_3ActionPerformed
-       
- 
-        JOptionPane.showMessageDialog(null," CinePAPAYA ALCAZAR "+"\n"
-            +" Av. Sta. Cruz 814,"+"\n"
-            + "San Isidro 15073 "," CinePAPAYA ALCAZAR ",
-            JOptionPane.WARNING_MESSAGE,IMA);
-    }//GEN-LAST:event_ubi_3ActionPerformed
-
-    private void ubi_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_4ActionPerformed
-        
- 
-        JOptionPane.showMessageDialog(null," CinePAPAYA COMAS "+"\n"
-            +" Av Tupac Amaru 3840,"+"\n"+
-            "Comas,"," CinePAPAYA COMAS ",
-            JOptionPane.WARNING_MESSAGE,IMA);
-    }//GEN-LAST:event_ubi_4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
@@ -259,6 +216,38 @@ public class cines_locales extends javax.swing.JFrame {
         M.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ubi_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_1ActionPerformed
+
+         JOptionPane.showMessageDialog(null," Royal Plaza"+"\n"+""+
+            "Carlos Alberto Izaguirre 295" +
+            " ,Lima ", " CinePAPAYA LOS OLIVOS ",
+            JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_ubi_1ActionPerformed
+
+    private void ubi_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_2ActionPerformed
+
+          JOptionPane.showMessageDialog(null," CinePAPAYA SMP"+"\n"+
+            "nro 7038 7042,"+"\n"+
+            "Av Alfredo Mendiola 7026, Lima ", " CinePAPAYA SAN MARTIN DE PORRES ",
+            JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_ubi_2ActionPerformed
+
+    private void ubi_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_3ActionPerformed
+
+        JOptionPane.showMessageDialog(null," CinePAPAYA ALCAZAR "+"\n"
+            +" Av. Sta. Cruz 814,"+"\n"
+            + "San Isidro 15073 "," CinePAPAYA ALCAZAR ",
+            JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_ubi_3ActionPerformed
+
+    private void ubi_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubi_4ActionPerformed
+
+        JOptionPane.showMessageDialog(null," CinePAPAYA COMAS "+"\n"
+            +" Av Tupac Amaru 3840,"+"\n"+
+            "Comas,"," CinePAPAYA COMAS ",
+            JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_ubi_4ActionPerformed
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -300,7 +289,6 @@ public class cines_locales extends javax.swing.JFrame {
     private javax.swing.JLabel C4;
     public static javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;

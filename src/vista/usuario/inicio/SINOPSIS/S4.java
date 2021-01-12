@@ -9,7 +9,6 @@ public class S4 extends javax.swing.JFrame {
 
     public S4() {
         initComponents();
-        
         setLocationRelativeTo(null);
         setVisible(true);
         setTitle(" LA MUJER MARAVILLA - PROXIMAMENTE ");

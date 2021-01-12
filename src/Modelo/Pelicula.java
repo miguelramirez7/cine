@@ -20,8 +20,8 @@ public class Pelicula {
     private int estado;
     private int panel;
 
-    public Pelicula(int idPelicula, String nombre, int idCategoriaPelicula, String resenia, String foto,int estado,int panel) {
-        this.idPelicula = idPelicula;
+    public Pelicula(/*int idPelicula,*/ String nombre, int idCategoriaPelicula, String resenia, String foto,int estado/*,int panel*/) {
+        //this.idPelicula = idPelicula;
         this.nombre = nombre;
         this.idCategoriaPelicula = idCategoriaPelicula;
         this.resenia = resenia;

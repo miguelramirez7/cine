@@ -29,7 +29,11 @@ public class peliculas extends javax.swing.JFrame {
             ResultSet rs1=ps1.executeQuery();
             PreparedStatement ps2=cn.prepareStatement("SET GLOBAL time_zone = '-5:00';");
             ResultSet rs2=ps2.executeQuery();
-            PreparedStatement ps=cn.prepareStatement("select date_format(now(),'%W %d') dia union select date_format(NOW() + INTERVAL 1 DAY,'%W %d')union select date_format(NOW() + INTERVAL 2 DAY,'%W %d')union select date_format(NOW() + INTERVAL 3 DAY,'%W %d')union select date_format(NOW() + INTERVAL 4 DAY,'%W %d')");
+            PreparedStatement ps=cn.prepareStatement("select date_format(now(),'%W %d') dia "
+                    + "union select date_format(NOW() + INTERVAL 1 DAY,'%W %d')"
+                    + "union select date_format(NOW() + INTERVAL 2 DAY,'%W %d')union "
+                    + "select date_format(NOW() + INTERVAL 3 DAY,'%W %d')union "
+                    + "select date_format(NOW() + INTERVAL 4 DAY,'%W %d')");
             ResultSet rs=ps.executeQuery();
             int i=1;
             while(rs.next()){

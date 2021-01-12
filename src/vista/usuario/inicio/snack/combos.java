@@ -1,5 +1,6 @@
 package vista.usuario.inicio.snack;
 
+
 import Conexion.AccesoDb;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -102,15 +103,15 @@ public class combos extends javax.swing.JFrame {
         combo1.setBackground(new java.awt.Color(255, 255, 255));
         combo1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         combo1.setForeground(new java.awt.Color(255, 51, 102));
-        combo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo1.setBorder(null);
         combo1.setBorderPainted(false);
         combo1.setContentAreaFilled(false);
         combo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         combo1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo1.setIconTextGap(-4);
-        combo1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar2.png"))); // NOI18N
-        combo1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar2.png"))); // NOI18N
+        combo1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo1.addActionListener(new java.awt.event.ActionListener() {
@@ -124,15 +125,15 @@ public class combos extends javax.swing.JFrame {
         combo2.setBackground(new java.awt.Color(255, 255, 255));
         combo2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         combo2.setForeground(new java.awt.Color(255, 51, 102));
-        combo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo2.setBorder(null);
         combo2.setBorderPainted(false);
         combo2.setContentAreaFilled(false);
         combo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         combo2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo2.setIconTextGap(-4);
-        combo2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar2.png"))); // NOI18N
-        combo2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar2.png"))); // NOI18N
+        combo2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo2.addActionListener(new java.awt.event.ActionListener() {
@@ -146,15 +147,15 @@ public class combos extends javax.swing.JFrame {
         combo3.setBackground(new java.awt.Color(255, 255, 255));
         combo3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         combo3.setForeground(new java.awt.Color(255, 51, 102));
-        combo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo3.setBorder(null);
         combo3.setBorderPainted(false);
         combo3.setContentAreaFilled(false);
         combo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         combo3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo3.setIconTextGap(-4);
-        combo3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar2.png"))); // NOI18N
-        combo3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar2.png"))); // NOI18N
+        combo3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo3.addActionListener(new java.awt.event.ActionListener() {
@@ -168,15 +169,15 @@ public class combos extends javax.swing.JFrame {
         combo4.setBackground(new java.awt.Color(255, 255, 255));
         combo4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         combo4.setForeground(new java.awt.Color(255, 51, 102));
-        combo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo4.setBorder(null);
         combo4.setBorderPainted(false);
         combo4.setContentAreaFilled(false);
         combo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         combo4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo4.setIconTextGap(-4);
-        combo4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar2.png"))); // NOI18N
-        combo4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar2.png"))); // NOI18N
+        combo4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo4.addActionListener(new java.awt.event.ActionListener() {
@@ -190,15 +191,15 @@ public class combos extends javax.swing.JFrame {
         combo5.setBackground(new java.awt.Color(255, 255, 255));
         combo5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         combo5.setForeground(new java.awt.Color(255, 51, 102));
-        combo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo5.setBorder(null);
         combo5.setBorderPainted(false);
         combo5.setContentAreaFilled(false);
         combo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         combo5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         combo5.setIconTextGap(-4);
-        combo5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar2.png"))); // NOI18N
-        combo5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/agregar1.png"))); // NOI18N
+        combo5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar2.png"))); // NOI18N
+        combo5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/agregar1.png"))); // NOI18N
         combo5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         combo5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         combo5.addActionListener(new java.awt.event.ActionListener() {
@@ -245,27 +246,27 @@ public class combos extends javax.swing.JFrame {
         getContentPane().add(jLabel7);
         jLabel7.setBounds(30, 150, 180, 20);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/c1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/c1.png"))); // NOI18N
         jLabel2.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
         getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 10, 140, 130);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/C4.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/C4.png"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
         getContentPane().add(jLabel4);
         jLabel4.setBounds(260, 200, 140, 140);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/C2.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/C2.png"))); // NOI18N
         jLabel3.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
         getContentPane().add(jLabel3);
         jLabel3.setBounds(260, 10, 140, 130);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/C5.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/C5.png"))); // NOI18N
         jLabel6.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 51)));
         getContentPane().add(jLabel6);
         jLabel6.setBounds(50, 390, 140, 120);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/SNACKS/C3.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/SNACKS/C3.png"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
         getContentPane().add(jLabel5);
         jLabel5.setBounds(60, 200, 140, 140);
@@ -350,14 +351,14 @@ public class combos extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(350, 350, 60, 20);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/back-icon.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/back-icon.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/back-icon (2).png"))); // NOI18N
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/inocos/back-icon.png"))); // NOI18N
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/back-icon (2).png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/inocos/back-icon.png"))); // NOI18N
         jButton1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -368,7 +369,7 @@ public class combos extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(320, 451, 60, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectos/imagenes/cines.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/usuario/imagenes/cines.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(-650, -1470, 1090, 2070);
 
@@ -426,44 +427,31 @@ public class combos extends javax.swing.JFrame {
     }//GEN-LAST:event_combo5ActionPerformed
 
     private void combo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combo1ActionPerformed
-        
-         bebidas_C2 C = new bebidas_C2 (); // para las bebidas
-        C.setVisible(true);  
-        
+    
+        bebidas_C2 C = new bebidas_C2 (); // para las bebidas
+        C.setVisible(true);          
         try {        
-      PreparedStatement M = cn.prepareStatement
-        (" INSERT INTO pedidos_de_clientes (nombre,precio,cantidad,total) VALUES(?,?,?,?)");
-            
-      M.setString(1,b);
-      M.setDouble(2,p2);
-      M.setInt(3,1);
-      M.setDouble(4,p2);
-      M.executeUpdate(); // para actualizar la BD
-      
-             
-    } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+            PreparedStatement M = cn.prepareStatement
+            (" INSERT INTO pedidos_de_clientes (nombre,precio,cantidad,total) VALUES(?,?,?,?)");          
+            M.setString(1,b);
+            M.setDouble(2,p2);
+            M.setInt(3,1);
+            M.setDouble(4,p2);
+            M.executeUpdate(); // para actualizar la BD           
+        } catch (SQLException ex) {      
+            Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
         }           
-        
-          
-        
          //---------------------------------------------------------------------       
       //---------------------------------------------------------------------  PARA GAURDAR EL TOTAL
-      
-      try {        
-      PreparedStatement M = cn.prepareStatement
-        (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");
-            
-      M.setString(1,b);
-      M.setDouble(2,p1);
-      M.executeUpdate(); // para actualizar la BD
-     
-    } catch (SQLException ex) {
-        
-        Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
+        try {        
+            PreparedStatement M = cn.prepareStatement
+            (" INSERT INTO total_a_pagar (producto,precioT) VALUES(?,?)");     
+            M.setString(1,b);
+            M.setDouble(2,p1);
+            M.executeUpdate(); // para actualizar la BD
+        } catch (SQLException ex) {
+            Logger.getLogger(dulces.class.getName()).log(Level.SEVERE,null,ex);
         }     
-    
     }//GEN-LAST:event_combo1ActionPerformed
 
     
